@@ -25,7 +25,7 @@
     <repositories>
         <repository>
             <id>github</id>
-            <url>https://maven.pkg.github.com/oleh-prukhnytskyi/macro-tracker-common</url>
+            <url>https://maven.pkg.github.com/macro-tracker-platform/common</url>
         </repository>
     </repositories>
 
@@ -33,7 +33,7 @@
         <dependency>
             <groupId>com.olehprukhnytskyi</groupId>
             <artifactId>macro-tracker-common</artifactId>
-            <version>1.0.20</version>
+            <version>1.0.38</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -66,6 +66,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 

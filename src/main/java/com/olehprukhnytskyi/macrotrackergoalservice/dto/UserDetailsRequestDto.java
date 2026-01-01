@@ -1,6 +1,7 @@
 package com.olehprukhnytskyi.macrotrackergoalservice.dto;
 
 import com.olehprukhnytskyi.util.ActivityLevel;
+import com.olehprukhnytskyi.util.BodyType;
 import com.olehprukhnytskyi.util.Gender;
 import com.olehprukhnytskyi.util.Goal;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -52,4 +53,8 @@ public class UserDetailsRequestDto {
     @Schema(description = "User activity level", requiredMode = Schema.RequiredMode.REQUIRED)
     @NotNull
     private ActivityLevel activityLevel;
+
+    @Schema(description = "User body type", requiredMode = Schema.RequiredMode.REQUIRED)
+    @NotNull
+    private BodyType bodyType;
 }
